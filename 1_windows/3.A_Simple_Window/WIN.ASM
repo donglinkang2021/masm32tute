@@ -47,10 +47,18 @@ WinMain proc hInst:HINSTANCE, hPrevInst:HINSTANCE, CmdLine:LPSTR, CmdShow:DWORD
 	invoke LoadCursor, NULL, IDC_ARROW
 	mov   wc.hCursor, eax
 	invoke RegisterClassEx, addr wc
-	INVOKE CreateWindowEx,NULL,ADDR ClassName,ADDR AppName,\
-           WS_OVERLAPPEDWINDOW,CW_USEDEFAULT,\
-           CW_USEDEFAULT,CW_USEDEFAULT,CW_USEDEFAULT,NULL,NULL,\
-           hInst,NULL
+	INVOKE CreateWindowEx,NULL,\
+			ADDR ClassName,\
+			ADDR AppName,\
+           	WS_OVERLAPPEDWINDOW,\
+			CW_USEDEFAULT,\
+           	CW_USEDEFAULT,\
+		   	CW_USEDEFAULT,\
+			CW_USEDEFAULT,\
+			NULL,\
+			NULL,\
+           	hInst,\
+			NULL
 	mov   hwnd, eax
 	invoke ShowWindow, hwnd, SW_SHOWNORMAL
 	invoke UpdateWindow, hwnd
