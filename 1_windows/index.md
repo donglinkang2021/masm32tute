@@ -1,8 +1,8 @@
 # index
 
-- [1.The Basics]()
-- [2.MessageBox]()
-- [3.A Simple Window]()
+- [1.The Basics](1.The Basics\tute001.html)
+- [2.MessageBox](2.MessageBox\tute002.html)
+- [3.A Simple Window](3.A Simple Window\tute003.html)
 - [4.Painting With Text]() 
 - [5.More About Text]()
 - [6.Keyboard Input]()
